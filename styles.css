@@ -155,6 +155,8 @@ tr:nth-child(even) {
 }
 
 /* Hide the 6th column */
+#data-table th:nth-child(5),
+#data-table td:nth-child(5),
 #data-table th:nth-child(6),
 #data-table td:nth-child(6) {
     display: none;
