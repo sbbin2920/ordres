@@ -110,7 +110,8 @@ body {
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow */
             text-align: left; /* Align text to the left */
             white-space: nowrap; /* Prevent text wrapping */
-			top: 0;
+            top: 0;
+            border-radius: 12px; /*rounded corners*/
         }
     /* Image styles */
         .popup-image img {
