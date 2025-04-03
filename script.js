@@ -5,6 +5,32 @@
 //    }
 //});
 
+// POPUP IMAGE ON HOVER
+        const popup = document.getElementById("popup");
+        const link = document.getElementById("hoverLink");
+
+        // Show the popup on mouse enter
+        link.addEventListener("mouseenter", () => {
+            popup.style.display = "block"; // Show the popup
+        });
+
+        // Hide the popup on mouse leave
+        link.addEventListener("mouseleave", () => {
+            popup.style.display = "none"; // Hide the popup
+        });
+
+        // Update the position of the popup based on mouse movement
+        link.addEventListener("mousemove", (event) => {
+            const popupWidth = popup.offsetWidth; // Get the width of the popup
+            const popupHeight = popup.offsetHeight; // Get the height of the popup
+
+            // Position the popup beside the mouse pointer
+            popup.style.left = `${event.pageX + 10}px`; // 10px to the right of the pointer
+            popup.style.top = `${event.pageY - popupHeight / 1000}px`; // Centered vertically with respect to the pointer
+        });
+
+
+
 // with click button-> document.getElementById('search-button').addEventListener('click', function() {
     document.getElementById('search').addEventListener('keypress', function(event) {
         if (event.key === 'Enter') {
