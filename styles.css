@@ -184,7 +184,7 @@ thead th {
     z-index: 10;
     padding: 1rem 1.5rem;
     user-select: none;
-    font-size: clamp(.7rem, 1vw, 1.025rem); 
+    font-size: clamp(.8rem, 1vw, 1.125rem); 
     white-space: nowrap;
 }
 tr:nth-child(even) {
