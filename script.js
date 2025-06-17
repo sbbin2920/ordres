@@ -1,10 +1,3 @@
-// Optional: Add functionality to search when pressing "Enter"
-//document.getElementById('search').addEventListener('keypress', function(event) {
-//    if (event.key === 'Enter') {
-//        document.getElementById('search-button').click();
-//    }
-//});
-
 // POPUP IMAGE ON HOVER
         const popup = document.getElementById("popup");
         const link = document.getElementById("hoverLink");
@@ -30,10 +23,8 @@
         });
 
 
-
-// with click button-> document.getElementById('search-button').addEventListener('click', function() {
-    document.getElementById('search').addEventListener('keypress', function(event) {
-        if (event.key === 'Enter') {
+// Add functionality to search automatically as the user types
+document.getElementById('search').addEventListener('input', function() {
     const searchInput = document.getElementById('search').value.toLowerCase();
     const table = document.getElementById('data-table');
     
@@ -75,14 +66,15 @@
     } else {
         noResultsDiv.style.display = 'block'; // Show message if no results found
     }
-}});
+});
+
 
 // Optional: Add functionality to search when pressing "Enter"
-document.getElementById('search').addEventListener('keypress', function(event) {
-    if (event.key === 'Enter') {
-        document.getElementById('search-button').click();
-    }
-});
+//document.getElementById('search').addEventListener('keypress', function(event) {
+//    if (event.key === 'Enter') {
+//        document.getElementById('search-button').click();
+//    }
+//});
 
 // BACK TO TOP Get the button
 const backToTopBtn = document.getElementById("backToTopBtn");
