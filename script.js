@@ -38,7 +38,7 @@ document.getElementById('search').addEventListener('input', function() {
     let found = false;
 
     // Loop through all table rows (except the first one, which is the header)
-    for (let i = 1; i < rows.length; i++) {
+    for (let i = 0; i < rows.length; i++) {
         const cells = rows[i].getElementsByTagName('td');
         let rowContainsSearchTerm = false;
 
@@ -70,10 +70,11 @@ document.getElementById('search').addEventListener('input', function() {
 
 
 // Optional: Add functionality to search when pressing "Enter"
+
 //document.getElementById('search').addEventListener('keypress', function(event) {
-//    if (event.key === 'Enter') {
+//   if (event.key === 'Enter') {
 //        document.getElementById('search-button').click();
-//    }
+//   }
 //});
 
 // BACK TO TOP Get the button
