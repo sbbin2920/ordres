@@ -24,17 +24,17 @@ body {
     align-items: center;
 }
 .navbar a.active {
-    /*text-decoration: underline; /* Underline the active link */
-    font-weight: bold; /* Optional: make the active link bold */
+    /*text-decoration: underline;  */
+    font-weight: bold; 
     color: white;
     font-size: medium;
 }
 .logo-image {
-    height: 77px; /* Set the height of the logo */
-    width: auto; /* Maintain aspect ratio */
+    height: 77px; 
+    width: auto; 
     position: absolute;
     top: 4px;
-    /* max-width: 100%; /* Ensure it doesn't exceed its container */
+    /* max-width: 100%; */ 
 }
 .logo-text  {
     font-size: 19px;
@@ -63,7 +63,7 @@ body {
 .nav-links a:hover {
 /*    background-color: #575757;
     border-radius: 5px; 
-    text-decoration: underline;  Underline the active link */
+    text-decoration: underline;   */
     color: white;
 }
 .search-container {
@@ -72,14 +72,14 @@ body {
     margin-left: 2em;
 }
 .search-input {
-    width: 120px; /* Set the width of the search bar */
-    height: 13px; /* Set the height of the search bar */
-    padding: 10px; /* Add padding for better spacing */
-    font-size: 13px; /* Increase font size */
-    border: 1px solid #ccc; /* Border styling */
-    border-radius: 5px; /* Rounded corners */
-    outline: none; /* Remove outline on focus */
-    transition: all 0.3s ease; /* Smooth transition for border color */
+    width: 120px; 
+    height: 13px; 
+    padding: 10px; 
+    font-size: 13px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    outline: none; 
+    transition: all 0.3s ease; 
 }
 
 /*.search-button {
@@ -280,4 +280,5 @@ footer {
     width: 100%;
 
 }
+
 
